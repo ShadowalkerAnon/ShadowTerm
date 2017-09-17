@@ -1,3 +1,5 @@
+// V0.2.1
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,20 +18,35 @@ int main(int argc, char const *argv[]) {
   } else if (strcmp(argv[1], "first_init") == 0) {
     printf("First init \nCreate Account (new) or Login In (login)\n?");
     char * anwser = malloc(20);
-    scanf("%c", anwser);
+    scanf("\n %s", anwser);
 
-    fgets(anwser, 20);
     if (strcmp(anwser, "new") == 0) {
-      printf("%s\n",anwser);
-    } else if (strcmp(anwser, "login") == 0) {
       char * username = malloc(20);
+      char * name = malloc(20);
+      char * email = malloc(20);
       char * password = malloc(20);
-      printf("username: ");
-      scanf("%c", username);
-      printf("password: ");
-      scanf("%c", password);
+      char * password2 = malloc(20);
+      printf("Welcome to Shadow Terminal ! \nPlease anwser the fill : \nUsername (name where we can contact you) ? @");
+      scanf("\n %s", username);
+      printf("Name (Display name) ? ");
+      scanf("\n %s", name);
+      printf("Email (for password recovery) ? ");
+      scanf("\n %s", email);
+      printf("Password ? ");
+      scanf("\n %s", password);
+      printf("Again : ");
+      scanf("\n %s", password2);
 
-      printf("login : %s | password : %s \n",username, password);
+      if (strcmp(password, password2) == 0) {
+        printf("\n\nPlease Check this information bellow :\n");
+        printf("@%s | %s | %s \n%s | %s", username,name,email,password,password2);
+      } else if (strcmp(password, password2) != 0) {
+        printf("Password Doesnt Match !");
+      }
+
+
+    } else if (strcmp(anwser, "login") == 0) {
+      /* code */
     }
   }
 
