@@ -6,6 +6,7 @@ Shadow Terminal is a easy/fast/scure way to send message throught terminal
 Compatibility :
 
 | OS     | Version | Full Works | Works at    |
+| ------ | ------- | ---------: | ----------- |
 | OSX    | latest  | 100%       |             |
 | Linux  | latest  |            | sould *90%* |
 | Windob | LOL     |    LOL     |     LOOL    |
