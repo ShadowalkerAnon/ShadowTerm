@@ -1,5 +1,15 @@
 # Shadow Terminal Messenger
 
+Shadow Terminal is a easy/fast/scure way to send message throught terminal
+> We're ussing Revolutions.network server
+
+Compatibility :
+
+| OS     | Version | Full Works | Works at    |
+| OSX    | latest  | 100%       |             |
+| Linux  | latest  |            | sould *90%* |
+| Windob | LOL     |    LOL     |     LOOL    |
+
 Run with flag *Wall* *Wextra* *Werror*
 
 ```
@@ -10,6 +20,6 @@ gcc -o run shadow.c -Wall -Wextra -Werror
 | File Name | Type     | Function Inside      | Other Stuff         |
 | --------- | -------- | -------------------- | ------------------- |
 | shadow.c  | Main     |                      | Main program        |
-| account.c | librairy | *Login*,*NewAccount* |                     |
-| msg.c     | librairy | *Send*,*Reply*       |                     |
+| account.c | library  | *Login*,*NewAccount* |                     |
+| msg.c     | library  | *Send*,*Reply*       |                     |
 | webhook.c | WebHooks |                      | WebHooks for Update |
