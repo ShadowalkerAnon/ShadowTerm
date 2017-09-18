@@ -1,6 +1,6 @@
 # Shadow Terminal Messenger
 
-Shadow Terminal is a easy/fast/scure way to send message throught terminal
+Shadow Terminal is a easy/fast/secure way to send message throught terminal
 > We're ussing Revolutions.network server
 
 Compatibility :
@@ -14,7 +14,7 @@ Compatibility :
 Run with flag *Wall* *Wextra* *Werror*
 
 ```
-gcc -o run shadow.c -Wall -Wextra -Werror
+gcc -o run shadow.c display.c display.h -Wall -Wextra -Werror
 ./run help
 ```
 
