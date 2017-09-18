@@ -23,4 +23,5 @@ gcc -o run shadow.c -Wall -Wextra -Werror
 | shadow.c  | Main     |                      | Main program        |
 | account.c | library  | *Login*,*NewAccount* |                     |
 | msg.c     | library  | *Send*,*Reply*       |                     |
+| system.c  | library  | *getMe*,*update*     |                     |
 | webhook.c | WebHooks |                      | WebHooks for Update |
