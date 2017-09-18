@@ -1,13 +1,19 @@
 // V0.2.1
-
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <time.h>
+
+#include "display.h"
 
 int main(int argc, char const *argv[]) {
 
   if (argc == 1) {
-    printf("Error : No argument");
+    display_msg();
+    srand(time(0));
+    int nsecret = (rand() % (100000000 + 1 - 5000000)) + 100000;
+    printf("%i\n", nsecret);
     return 1;
   }
 
@@ -24,19 +30,16 @@ int main(int argc, char const *argv[]) {
       char * username = malloc(20);
       char * name = malloc(20);
       char * email = malloc(20);
-      char * password = malloc(20);
-      char * password2 = malloc(20);
       printf("Welcome to Shadow Terminal ! \nPlease anwser the fill : \nUsername (name where we can contact you) ? @");
       scanf("\n %s", username);
       printf("Name (Display name) ? ");
       scanf("\n %s", name);
       printf("Email (for password recovery) ? ");
       scanf("\n %s", email);
-      printf("Password ? ");
-      scanf("\n %s", password);
-      printf("Again : ");
-      scanf("\n %s", password2);
-
+      char * password = getpass("Password ? ");
+      printf("%s\n", password);
+      char * password2 = getpass("Again : ");
+      printf("%s\n", password2);
       if (strcmp(password, password2) == 0) {
         printf("\n\nPlease Check this information bellow :\n");
         printf("@%s | %s | %s \n%s | %s", username,name,email,password,password2);
