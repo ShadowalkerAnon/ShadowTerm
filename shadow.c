@@ -18,7 +18,7 @@ int main(int argc, char const *argv[]) {
   }
 
   if (strcmp(argv[1], "help") == 0 || strcmp(argv[1], "h") == 0) {
-    printf("Shadow Terminal Messenger - v0.1 Beta\nCommands :\nhelp - h\t\tShow this\nsend [username] [msg]\tSend message to a specifique user\nreply [msg]\t\tReply to last message\ngetme\t\t\tGet Update");
+    display_help();
   } else if (strcmp(argv[1], "getme") == 0) {
 
   } else if (strcmp(argv[1], "first_init") == 0) {
