@@ -5,11 +5,11 @@ Shadow Terminal is a easy/fast/secure way to send message throught terminal
 
 Compatibility :
 
-| OS     | Version | Full Works | Works at    |
-| ------ | ------- | ---------: | ----------- |
-| OSX    | latest  | 100%       |             |
-| Linux  | latest  |            | sould *90%* |
-| Windob | LOL     |    LOL     |     LOOL    |
+| OS     | Version | Full Works | Works at     |
+| ------ | ------- | ---------: | ------------ |
+| OSX    | latest  | 100%       |              |
+| Linux  | latest  |            | should *90%* |
+| Windob | LOL     |    LOL     |     LOOL     |
 
 Run with flag *Wall* *Wextra* *Werror*
 
@@ -18,10 +18,11 @@ gcc -o run shadow.c display.c display.h -Wall -Wextra -Werror
 ./run help
 ```
 
-| File Name | Type     | Function Inside      | Other Stuff         |
-| --------- | -------- | -------------------- | ------------------- |
-| shadow.c  | Main     |                      | Main program        |
-| account.c | library  | *Login*,*NewAccount* |                     |
-| msg.c     | library  | *Send*,*Reply*       |                     |
-| system.c  | library  | *getMe*,*update*     |                     |
-| webhook.c | WebHooks |                      | WebHooks for Update |
+| File Name | Type     | Function Inside              | Other Stuff         |
+| --------- | -------- | ---------------------------- | ------------------- |
+| shadow.c  | Main     |                              | Main program        |
+| account.c | library  | *Login*,*NewAccount*         |                     |
+| msg.c     | library  | *Send*,*Reply*               |                     |
+| system.c  | library  | *getMe*,*update*             |                     |
+| display.c | library  | *display_msg*,*display_help* |                     |
+| webhook.c | WebHooks |                              | WebHooks for Update |
