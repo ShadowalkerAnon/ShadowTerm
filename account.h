@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int login(char pseudo, char pswd);
+//int login(char pseudo, char pswd);
 int NewAccount ();
 
 #endif

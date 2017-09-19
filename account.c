@@ -1,9 +1,11 @@
 #include "account.h"
 
+/*
 int login(char pseudo, char pswd) {
   printf("Login ...\n");
   return 0;
 }
+*/
 
 int NewAccount () {
   char * username = malloc(20);
