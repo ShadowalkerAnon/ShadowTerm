@@ -13,6 +13,7 @@ int login() {
 
 int getMe() {
   printf("Sending getMe to shadow terminal server ...");
+  return 0;
 }
 
 int NewAccount () {
