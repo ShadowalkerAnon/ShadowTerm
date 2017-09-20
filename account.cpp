@@ -1,24 +1,24 @@
 #include "account.h"
 
-using namespace Poco::Net;
-using namespace Poco;
+// using namespace Poco::Net;
+// using namespace Poco;
 
 int login() {
   printf("Login :\nPseudo :\t");
-  char pseudo;
-  scanf("\n %s", pseudo);
+  char * pseudo;
+  scanf("\n %c", pseudo);
   printf("Password :\t");
   char psswd;
   while( (psswd=getchar()) != '\n')
         printf("*");
   printf("\n");
 
-  printf("%s | %s\n", pseudo, psswd);
+  printf("%s | %c\n", pseudo, psswd);
   return 0;
 }
 
 int getMe() {
-  printf("Sending getMe to shadow terminal server ...");
+  printf("Sending getMe to Shadow Terminal server ...");
   return 0;
 }
 
