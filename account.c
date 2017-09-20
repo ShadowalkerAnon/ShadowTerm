@@ -1,11 +1,19 @@
 #include "account.h"
 
-/*
-int login(char pseudo, char pswd) {
-  printf("Login ...\n");
+
+int login() {
+  printf("Login :\nPseudo :\t");
+  char * pseudo = malloc(30);
+  scanf("\n %s", pseudo);
+  printf("Password :\t");
+  char * psswd = malloc(35);
+  printf("%s | %s\n", pseudo, psswd);
   return 0;
 }
-*/
+
+int getMe() {
+  printf("Sending getMe to shadow terminal server ...");
+}
 
 int NewAccount () {
   char * username = malloc(20);

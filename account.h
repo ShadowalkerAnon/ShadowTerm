@@ -6,7 +6,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-//int login(char pseudo, char pswd);
+int login();
+int getMe();
 int NewAccount ();
 
 #endif
