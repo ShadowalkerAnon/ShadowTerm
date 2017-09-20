@@ -5,10 +5,10 @@ using namespace Poco;
 
 int login() {
   printf("Login :\nPseudo :\t");
-  char * pseudo = malloc(30);
+  char * pseudo;
   scanf("\n %s", pseudo);
   printf("Password :\t");
-  int *psswd[25];
+  char *psswd[25];
   while( (psswd=getchar()) != '\n')
         printf("*");
   printf("\n");
