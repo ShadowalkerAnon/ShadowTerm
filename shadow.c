@@ -31,7 +31,9 @@ int main(int argc, char const *argv[]) {
     } else if (strcmp(anwser, "login") == 0) {
       login();
     }
-  } // else if (strcmp(argv[1], ""))
+  } else if (strcmp(argv[1], "test") == 0) {
+    test_connection();
+  }
 
   return 0;
 }

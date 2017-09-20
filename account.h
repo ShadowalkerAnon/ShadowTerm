@@ -9,5 +9,6 @@
 int login();
 int getMe();
 int NewAccount ();
+void test_connection();
 
 #endif
