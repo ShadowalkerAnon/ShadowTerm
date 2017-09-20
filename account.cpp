@@ -23,18 +23,18 @@ int getMe() {
 }
 
 int NewAccount () {
-  char username;
-  char name;
-  char email;
+  char * username;
+  char * name;
+  char * email;
   printf("Welcome to Shadow Terminal ! \nPlease anwser the fill : \nUsername (name where we can contact you) ? @");
   scanf("\n %s", username);
   printf("Name (Display name) ? ");
   scanf("\n %s", name);
   printf("Email (for password recovery) ? ");
   scanf("\n %s", email);
-  char password = getpass("Password ? ");
+  char * password = getpass("Password ? ");
   printf("%s\n", password);
-  char password2 = getpass("Again : ");
+  char * password2 = getpass("Again : ");
   printf("%s\n", password2);
   if (strcmp(password, password2) == 0) {
     printf("\n\nPlease Check this information bellow :\n");
