@@ -7,6 +7,11 @@ int login() {
   scanf("\n %s", pseudo);
   printf("Password :\t");
   char * psswd = malloc(35);
+
+  while(( psswd=getch() ) != '\n')
+        printf("*");
+  printf("\n");
+
   printf("%s | %s\n", pseudo, psswd);
   return 0;
 }
