@@ -8,7 +8,7 @@ int login() {
   printf("Password :\t");
   char * psswd = malloc(35);
 
-  while(( psswd=getch() ) != '\n')
+  while( (psswd=getchar()) != '\n')
         printf("*");
   printf("\n");
 
