@@ -1,10 +1,9 @@
 CC=gcc
 CFLAGS=-Wall -Werror -Wetra
-EXEC=build
+EXEC=run
 CPP_FILE=account.cpp display.cpp shadow.cpp
 H_FILE=account.h display.h
-OUTPUT_BIN=run
 
 
 build:
-	$(CC) -o $(OUTPUT_BIN) $(CPP_FILE) $(H_FILE) $(CFLAGS)
+	$(CC) -o $(EXEC) $(CPP_FILE) $(H_FILE) $(CFLAGS)
