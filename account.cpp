@@ -1,7 +1,17 @@
 #include "account.h"
 
-// using namespace Poco::Net;
-// using namespace Poco;
+//#include <Poco/Net/HTTPClientSession.h>
+//#include <Poco/Net/HTTPRequest.h>
+//#include <Poco/Net/HTTPResponse.h>
+//#include <Poco/StreamCopier.h>
+//#include <Poco/Path.h>
+//#include <Poco/URI.h>
+//#include <Poco/Exception.h>
+//#include <iostream>
+//#include <string>
+
+//using namespace Poco::Net;
+//using namespace Poco;
 
 int login() {
   printf("Login :\nPseudo :\t");
