@@ -11,11 +11,15 @@ Compatibility :
 | Linux  | latest  |            | should *90%* |
 | Windob | LOL     |    LOL     |     LOOL     |
 
-Run with flag *Wall* *Wextra* *Werror*
-
+~~Run with flag *Wall* *Wextra* *Werror*~~
 ```
-gcc -o run shadow.c display.c display.h -Wall -Wextra -Werror
-./run help
+~~gcc -o run shadow.c display.c display.h -Wall -Wextra -Werror~~
+~~./run help~~
+```
+
+You can now use the *makefile* for compile :
+```
+make || make build
 ```
 
 | File Name | Type     | Function Inside              | Other Stuff         |
